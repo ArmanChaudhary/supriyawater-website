@@ -481,7 +481,7 @@ const products = [
         name: "AUX/Videocon Cassette AC",
         category: "Air Conditioner",
         price: "Contact for Price",
-        image: "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/515922539_1419712585737123_1118916760668110017_n.jpg?stp=dst-jpg_tt6&cstp=mx1024x1024&ctp=s1024x1024&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=bnHA6QQYjS8Q7kNvwGu7ET3&_nc_oc=AdpvAeWu_SQkTMB6ko2KD9ubOsnjFtF-DUTB1KN1o-BF_QnLLtux853wfItXQUfl6-3UvWhh5ISRmdG86Gj2IMCc&_nc_zt=23&_nc_ht=scontent.fktm3-1.fna&_nc_gid=NGIDIls0_-8VG-swXvBkiw&_nc_ss=7b289&oh=00_Af_2EJXjurbFjGcl4prbDrSlbTqGAUlemw2PToJPZ6cUcQ&oe=6A33CDB1",
+        image: "https://auxcool.com/wp-content/uploads/2025/08/defr.webp",
         description: "AUX/Videocon ceiling cassette air conditioner designed for commercial spaces, providing 4-way air distribution with uniform cooling coverage.",
         specs: "2 Ton to 5 Ton Capacity | Ceiling Cassette Type | 4-Way Air Distribution | R32 Refrigerant | Wireless Remote | Commercial Grade."
     },
