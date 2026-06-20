@@ -1,0 +1,29 @@
+# Robots.txt for Supriya Water Technology
+# Optimized for SEO - Calculator Tools Priority
+
+User-agent: *
+Allow: /
+
+# PRIORITY PAGES - Engineering Calculator Tools
+# These tools should be crawled frequently for best rankings
+Allow: /ro-capacity-calculator.html
+Allow: /water-parameter-analyzer.html
+Allow: /tds-calculator.html
+Allow: /ac-size-calculator.html
+
+# Allow important resources
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Disallow admin, backup, or unnecessary directories
+Disallow: /cgi-bin/
+Disallow: /.git/
+Disallow: /backup/
+Disallow: /images/backup/
+
+# Crawl delay (optional - remove if you want faster indexing)
+# Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://supriyawater.com.np/sitemap.xml

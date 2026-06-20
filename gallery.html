@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Project Gallery - Water Treatment Projects Nepal | Supriya Water Technology</title>
+    <meta name="title" content="Project Gallery - Water Treatment & Purification Projects in Nepal">
+    <meta name="description" content="View our completed water treatment projects across Nepal. RO installations, sewage treatment plants, water fountains, and industrial water solutions. 6000+ successful installations showcasing our expertise.">
+    <meta name="keywords" content="water treatment projects Nepal, RO installation photos, sewage treatment plant Nepal, water fountain projects, water purification gallery, completed projects Nepal, water treatment portfolio">
+    <meta name="author" content="Supriya Water Technology">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="NP-BA">
+    <meta name="geo.placename" content="Kathmandu">
+    <meta name="geo.position" content="27.7172;85.3240">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://supriyawater.com.np/gallery.html">
+    <meta property="og:title" content="Project Gallery - Water Treatment & Purification Projects in Nepal">
+    <meta property="og:description" content="View our completed water treatment projects across Nepal. RO installations, sewage treatment plants, water fountains, and industrial water solutions.">
+    <meta property="og:image" content="https://supriyawater.com.np/images/logo.png">
+    <meta property="og:site_name" content="Supriya Water Technology">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://supriyawater.com.np/gallery.html">
+    <meta property="twitter:title" content="Project Gallery - Water Treatment & Purification Projects in Nepal">
+    <meta property="twitter:description" content="View our completed water treatment projects across Nepal. 6000+ successful installations showcasing our expertise.">
+    <meta property="twitter:image" content="https://supriyawater.com.np/images/logo.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://supriyawater.com.np/gallery.html">
+    
+    <!-- Alternate Languages -->
+    <link rel="alternate" hreflang="en" href="https://supriyawater.com.np/gallery.html">
+    
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Utilizing Tailwind specifically configured to match the brand colors -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2657a6',
+                        secondary: '#3d6bb8',
+                        accent: '#5480ca',
+                        darkBlue: '#1a4380',
+                        lightBlue: '#e8eef7',
+                        lighterBlue: '#f5f8fc',
+                    },
+                    fontFamily: {
+                        heading: ['Montserrat', 'Poppins', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                        display: ['Poppins', 'sans-serif'],
+                        calligraphy: ['Great Vibes', 'Dancing Script', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-mesh {
+            background-image: 
+                radial-gradient(at 40% 20%, rgba(38,87,166,0.15) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, rgba(61,107,184,0.1) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, rgba(38,87,166,0.1) 0px, transparent 50%),
+                radial-gradient(at 80% 50%, rgba(84,128,202,0.1) 0px, transparent 50%);
+        }
+
+        /* Filter Dropdown Styles */
+        .filter-dropdown-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 32px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(38, 87, 166, 0.3);
+        }
+        
+        .filter-dropdown-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(38, 87, 166, 0.4);
+        }
+        
+        .filter-dropdown-btn i.chevron {
+            transition: transform 0.3s ease;
+        }
+        
+        .filter-dropdown-btn.open i.chevron {
+            transform: rotate(180deg);
+        }
+        
+        .filter-panel {
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            padding: 8px;
+            min-width: 280px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 100;
+        }
+        
+        .filter-panel.open {
+            opacity: 1;
+            visibility: visible;
+            top: 70px;
+        }
+        
+        .filter-option {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: all 0.2s ease;
+            color: #374151;
+            font-weight: 500;
+        }
+        
+        .filter-option:hover {
+            background: #f3f4f6;
+            color: var(--primary-color);
+        }
+        
+        .filter-option.active {
+            background: linear-gradient(135deg, rgba(38, 87, 166, 0.1), rgba(61, 107, 184, 0.1));
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .filter-option i {
+            width: 20px;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        /* Modern Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columns */
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            cursor: pointer;
+            background: var(--white);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            height: 320px; /* Increased from 300px */
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 50%, transparent 100%);
+            padding: 25px;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        .gallery-overlay h3 {
+            color: var(--white);
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .gallery-overlay p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .gallery-overlay p i {
+            color: var(--accent-color);
+        }
+
+        /* Lightbox Modal */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90vh;
+            animation: zoomIn 0.3s ease;
+        }
+
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 90vh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            border-radius: var(--border-radius);
+            display: block;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -50px;
+            right: 0;
+            background: var(--white);
+            color: var(--text-dark);
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .lightbox-close:hover {
+            background: var(--primary-color);
+            color: var(--white);
+            transform: rotate(90deg);
+        }
+
+        .lightbox-info {
+            position: absolute;
+            bottom: -80px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .lightbox-info h3 {
+            color: var(--white);
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .lightbox-info p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Empty State */
+        .gallery-empty {
+            text-align: center;
+            padding: 80px 20px;
+            color: var(--text-light);
+        }
+
+        .gallery-empty i {
+            font-size: 4rem;
+            color: var(--light-blue);
+            margin-bottom: 20px;
+        }
+
+        .gallery-empty h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        /* Pagination Controls */
+        .pagination-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 60px;
+            padding: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr; /* 1 column on mobile */
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr); /* 3 columns on small desktop */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery-page {
+                padding-top: 140px;
+            }
+
+            .gallery-item {
+                height: 250px;
+            }
+
+            .filter-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" id="announcementBar">
+        <div class="announcement-content">
+            <span class="announcement-text" id="announcementText">Welcome to Supriya Water Technology - Nepal's Trusted Water Solutions Partner</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo pl-4">
+                    <img src="images/logo.png" alt="Supriya Water Technology" class="logo-img">
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="about.html" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                            <li><a href="why-choose-us.html"><i class="fas fa-star"></i> Why Choose Us</a></li>
+                            <li><a href="our-presence.html"><i class="fas fa-lightbulb"></i> Digital Lighting Decoration</a></li>
+                            <li><a href="google-reviews.html"><i class="fab fa-google"></i> Google Reviews</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="products.html" class="nav-link">Products <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="products.html"><i class="fas fa-th-large"></i> All Products</a></li>
+                            <li><a href="products.html?category=Domestic%20Purifier"><i class="fas fa-home"></i> Domestic Purifier</a></li>
+                            <li><a href="products.html?category=Water%20Filter%20Media"><i class="fas fa-filter"></i> Water Filter Media</a></li>
+                            <li><a href="products.html?category=Water%20Treatment%20Plant"><i class="fas fa-industry"></i> Water Treatment Plant</a></li>
+                            <li><a href="products.html?category=RO%20Plant"><i class="fas fa-tint"></i> RO Plant</a></li>
+                            <li><a href="products.html?category=Air%20Conditioner"><i class="fas fa-snowflake"></i> Air Conditioner</a></li>
+                            <li><a href="products.html?category=Others"><i class="fas fa-ellipsis-h"></i> Others</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="gallery.html" class="nav-link active">Gallery <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="gallery.html"><i class="fas fa-images"></i> Photos</a></li>
+                            <li><a href="gallery-videos.html"><i class="fas fa-video"></i> Videos</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Tools <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ro-capacity-calculator.html"><i class="fas fa-calculator"></i> RO Capacity Calculator</a></li>
+                            <li><a href="water-parameter-analyzer.html"><i class="fas fa-flask"></i> Water Parameter Analyzer</a></li>
+                            <li><a href="tds-calculator.html"><i class="fas fa-tint"></i> TDS Calculator</a></li>
+                            <li><a href="ac-size-calculator.html"><i class="fas fa-snowflake"></i> AC Size Calculator</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="resources.html" class="nav-link">Resources</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Our Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="tank-cleaning.html"><i class="fas fa-bucket"></i> Tank Cleaning</a></li>
+                            <li><a href="media-replacement.html"><i class="fas fa-filter"></i> Media Replacement</a></li>
+                            <li><a href="wtp-installation.html"><i class="fas fa-wrench"></i> WTP Installation</a></li>
+                            <li><a href="sewage-treatment-plant.html"><i class="fas fa-recycle"></i> Sewage Treatment Plant</a></li>
+                            <li><a href="amc-service.html"><i class="fas fa-shield-alt"></i> AMC Service</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="water-fountain.html" class="nav-link water-fountain-btn">
+                        Water Fountain
+                        <span class="new-badge">EXCLUSIVE</span>
+                    </a></li>
+                    <li><a href="contact.html" class="nav-link enquiry-btn">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Page Content -->
+    <section class="relative pt-[200px] pb-24 bg-gradient-to-b from-lighterBlue to-white overflow-hidden">
+        <div class="absolute inset-0 z-0 gradient-mesh"></div>
+        <div class="container mx-auto px-6 relative z-10 max-w-[1200px]">
+            <div class="flex flex-col items-center text-center">
+                <div class="inline-flex items-center gap-3 bg-white px-6 py-3 rounded-full border border-primary/20 shadow-sm mb-8">
+                    <i class="fas fa-images text-primary text-xl"></i>
+                    <span class="text-sm font-bold text-darkBlue uppercase tracking-widest font-heading">Our Portfolio</span>
+                </div>
+                
+                <h1 class="text-6xl md:text-8xl font-black text-darkBlue mb-6 tracking-tight font-display drop-shadow-sm">
+                    Project <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Gallery</span>
+                </h1>
+                
+                <p class="text-4xl text-primary font-calligraphy mb-8">Engineering Water Into Experience</p>
+                
+                <p class="text-xl text-gray-600 font-medium max-w-3xl leading-relaxed">
+                    Showcasing Our Excellence in Water Treatment Solutions
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-3 max-w-[1400px]">
+
+            <!-- Filter Dropdown -->
+            <div class="relative flex justify-center mb-12">
+                <button class="filter-dropdown-btn" id="filterDropdownBtn" onclick="toggleGalleryFilterPanel()">
+                    <i class="fas fa-filter"></i>
+                    <span id="currentGalleryFilterText">All Projects</span>
+                    <i class="fas fa-chevron-down chevron"></i>
+                </button>
+                
+                <div class="filter-panel" id="galleryFilterPanel">
+                    <div class="filter-option active" data-filter="all" onclick="selectGalleryFilter('all', 'All Projects')">
+                        <i class="fas fa-th"></i>
+                        <span>All Projects</span>
+                    </div>
+                    <div class="filter-option" data-filter="water-treatment" onclick="selectGalleryFilter('water-treatment', 'Water Treatment')">
+                        <i class="fas fa-water"></i>
+                        <span>Water Treatment</span>
+                    </div>
+                    <div class="filter-option" data-filter="sewage" onclick="selectGalleryFilter('sewage', 'Sewage Treatment')">
+                        <i class="fas fa-recycle"></i>
+                        <span>Sewage Treatment</span>
+                    </div>
+                    <div class="filter-option" data-filter="fountain" onclick="selectGalleryFilter('fountain', 'Fountains')">
+                        <i class="fas fa-fountain"></i>
+                        <span>Fountains</span>
+                    </div>
+                    <div class="filter-option" data-filter="ro-system" onclick="selectGalleryFilter('ro-system', 'RO Systems')">
+                        <i class="fas fa-filter"></i>
+                        <span>RO Systems</span>
+                    </div>
+                    <div class="filter-option" data-filter="air-conditioning" onclick="selectGalleryFilter('air-conditioning', 'Air Conditioning')">
+                        <i class="fas fa-snowflake"></i>
+                        <span>Air Conditioning</span>
+                    </div>
+                    <div class="filter-option" data-filter="lighting" onclick="selectGalleryFilter('lighting', 'Lighting')">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Lighting</span>
+                    </div>
+                    <div class="filter-option" data-filter="solar" onclick="selectGalleryFilter('solar', 'Solar')">
+                        <i class="fas fa-solar-panel"></i>
+                        <span>Solar</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items will be loaded dynamically -->
+            </div>
+
+            <!-- Pagination Controls -->
+            <div class="pagination-controls" id="paginationControls" style="display: none;">
+                <!-- Pagination buttons will be inserted dynamically -->
+            </div>
+
+            <!-- Empty State -->
+            <div class="gallery-empty" id="galleryEmpty" style="display: none;">
+                <i class="fas fa-images"></i>
+                <h3>No Projects Found</h3>
+                <p>No projects match the selected filter. Try selecting a different category.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="lightboxMediaContainer">
+                <img src="" alt="" id="lightboxImage">
+            </div>
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxLocation"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col footer-about">
+                    <div class="footer-logo">
+                        <img src="images/logo-3.png" alt="Supriya Water Technology" class="footer-logo-img">
+                    </div>
+                    <p class="company-tagline">Purity in Each Drop</p>
+                    <p>Providing comprehensive water treatment solutions for domestic, industrial, and commercial
+                        applications across Nepal.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/supriyawater/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/supriya_water/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@supriyawater" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/company/supriya-water-technology/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://share.google/jPWUREj9ly1qWIgi0" target="_blank" rel="noopener noreferrer" aria-label="Google Business"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="water-fountain.html">Water Fountain</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact-info">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Address</strong>
+                                <span>House No: 117, Shalik Chowk<br>Tankeshwar Marg, Kathmandu 44600</span>
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <a href="tel:+9779851055247">+977-9851055247</a>
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:info.supriyawater@gmail.com">info.supriyawater@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col newsletter-section">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for latest updates and offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">
+                            <span>Subscribe</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Supriya Water Technology All rights reserved<br>
+                <span style="font-size: 0.875rem; opacity: 0.8;">Developed proudly by Inhouse Team of Supriya Water Technology</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+        <span class="scroll-tooltip">Back to Top</span>
+    </button>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/9779851055247?text=Hello%20Supriya%20Water%20Technology,%20I%20would%20like%20to%20inquire%20about%20your%20products" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us on WhatsApp</span>
+    </a>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/image-handler.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script>
+        // Dropdown Toggle Functions
+        function toggleGalleryFilterPanel() {
+            const panel = document.getElementById('galleryFilterPanel');
+            const btn = document.getElementById('filterDropdownBtn');
+            panel.classList.toggle('open');
+            btn.classList.toggle('open');
+        }
+
+        function selectGalleryFilter(category, label) {
+            // Update button text
+            document.getElementById('currentGalleryFilterText').textContent = label;
+            
+            // Update active state
+            document.querySelectorAll('#galleryFilterPanel .filter-option').forEach(opt => {
+                opt.classList.remove('active');
+            });
+            event.target.closest('.filter-option').classList.add('active');
+            
+            // Close panel
+            toggleGalleryFilterPanel();
+            
+            // Filter gallery
+            filterGallery(category);
+        }
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            const panel = document.getElementById('galleryFilterPanel');
+            const btn = document.getElementById('filterDropdownBtn');
+            if (panel && btn && !panel.contains(event.target) && !btn.contains(event.target)) {
+                panel.classList.remove('open');
+                btn.classList.remove('open');
+            }
+        });
+
+        // Gallery State
+        let currentFilter = 'all';
+        let allGalleryItems = [];
+        let currentPage = 1;
+        const itemsPerPage = 18;  // Show 18 items per page (6 rows x 3 columns)
+        let filteredItems = [];
+
+        // Load Gallery
+        function loadGallery() {
+            const gallery = DataManager.getGallery();
+            // Filter to show only images (photos), exclude videos
+            allGalleryItems = gallery.filter(item => item.mediaType === 'image');
+            
+            renderGallery(allGalleryItems);
+        }
+
+        // Generate Filter Buttons Dynamically
+        function generateFilterButtons(gallery) {
+            const filtersContainer = document.querySelector('.gallery-filters');
+            
+            // Get unique categories
+            const categories = [...new Set(gallery.map(item => item.category).filter(cat => cat))];
+            
+            // Category labels mapping
+            const categoryLabels = {
+                'water-treatment': { icon: 'fa-water', label: 'Water Treatment' },
+                'sewage': { icon: 'fa-recycle', label: 'Sewage Treatment' },
+                'fountain': { icon: 'fa-fountain', label: 'Fountains' },
+                'ro-system': { icon: 'fa-filter', label: 'RO Systems' }
+            };
+            
+            // Build filter buttons HTML
+            let filtersHTML = `
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> All Projects
+                </button>
+            `;
+            
+            categories.forEach(category => {
+                const catInfo = categoryLabels[category];
+                if (catInfo) {
+                    filtersHTML += `
+                        <button class="filter-btn" data-filter="${category}">
+                            <i class="fas ${catInfo.icon}"></i> ${catInfo.label}
+                        </button>
+                    `;
+                } else {
+                    // Custom category
+                    const label = category.split('-').map(word => 
+                        word.charAt(0).toUpperCase() + word.slice(1)
+                    ).join(' ');
+                    filtersHTML += `
+                        <button class="filter-btn" data-filter="${category}">
+                            <i class="fas fa-folder"></i> ${label}
+                        </button>
+                    `;
+                }
+            });
+            
+            filtersContainer.innerHTML = filtersHTML;
+            
+            // Re-attach event listeners
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Update active state
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    // Filter gallery
+                    const filter = btn.dataset.filter;
+                    filterGallery(filter);
+                });
+            });
+        }
+
+        // Render Gallery with Pagination
+        function renderGallery(items) {
+            const galleryGrid = document.getElementById('galleryGrid');
+            const galleryEmpty = document.getElementById('galleryEmpty');
+            const paginationControls = document.getElementById('paginationControls');
+            
+            filteredItems = items;
+            
+            if (items.length === 0) {
+                galleryGrid.style.display = 'none';
+                galleryEmpty.style.display = 'block';
+                paginationControls.style.display = 'none';
+                return;
+            }
+
+            galleryGrid.style.display = 'grid';
+            galleryEmpty.style.display = 'none';
+            
+            // Calculate pagination
+            const totalPages = Math.ceil(items.length / itemsPerPage);
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const paginatedItems = items.slice(startIndex, endIndex);
+            
+            // Show/hide pagination controls
+            if (items.length > itemsPerPage) {
+                paginationControls.style.display = 'flex';
+                updatePaginationControls(totalPages);
+            } else {
+                paginationControls.style.display = 'none';
+            }
+            
+            // Render items
+            galleryGrid.innerHTML = paginatedItems.map((item, index) => {
+                const actualIndex = startIndex + index;
+                return `
+                    <div class="gallery-item" data-category="${item.category || 'all'}" data-index="${actualIndex}">
+                        <img src="${item.image}" alt="${item.title}" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>${item.title}</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> ${item.location}</p>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            // Add click event to gallery items
+            document.querySelectorAll('.gallery-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    const index = parseInt(item.dataset.index);
+                    openLightbox(items[index]);
+                });
+            });
+            
+            // Scroll to top of gallery
+            document.getElementById('galleryGrid').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Update Pagination Controls
+        function updatePaginationControls(totalPages) {
+            const paginationControls = document.getElementById('paginationControls');
+            
+            if (totalPages <= 1) {
+                paginationControls.style.display = 'none';
+                return;
+            }
+            
+            paginationControls.style.display = 'flex';
+            
+            let controlsHTML = '';
+            
+            // Previous Button
+            const isPrevDisabled = currentPage === 1;
+            controlsHTML += `
+                <button class="w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300 border ${isPrevDisabled ? 'border-gray-100 text-gray-300 cursor-not-allowed bg-gray-50' : 'border-gray-200 text-primary bg-white hover:bg-primary hover:text-white hover:border-primary hover:shadow-md'}" ${isPrevDisabled ? 'disabled' : ''} id="prevPageBtn">
+                    <i class="fas fa-chevron-left text-sm"></i>
+                </button>
+            `;
+            
+            // Numeric Page Buttons
+            for (let i = 1; i <= totalPages; i++) {
+                const isActive = currentPage === i;
+                controlsHTML += `
+                    <button class="w-12 h-12 rounded-xl flex items-center justify-center font-bold text-sm transition-all duration-300 ${isActive ? 'bg-primary text-white border-primary shadow-md scale-110' : 'bg-white text-gray-600 border border-gray-200 hover:border-primary hover:text-primary'}" data-page="${i}">
+                        ${i}
+                    </button>
+                `;
+            }
+            
+            // Next Button
+            const isNextDisabled = currentPage === totalPages;
+            controlsHTML += `
+                <button class="w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300 border ${isNextDisabled ? 'border-gray-100 text-gray-300 cursor-not-allowed bg-gray-50' : 'border-gray-200 text-primary bg-white hover:bg-primary hover:text-white hover:border-primary hover:shadow-md'}" ${isNextDisabled ? 'disabled' : ''} id="nextPageBtn">
+                    <i class="fas fa-chevron-right text-sm"></i>
+                </button>
+            `;
+            
+            paginationControls.innerHTML = controlsHTML;
+            
+            // Attach event listeners
+            const prevBtn = document.getElementById('prevPageBtn');
+            const nextBtn = document.getElementById('nextPageBtn');
+            
+            if (prevBtn && !isPrevDisabled) {
+                prevBtn.addEventListener('click', () => {
+                    if (currentPage > 1) {
+                        currentPage--;
+                        renderGallery(filteredItems);
+                    }
+                });
+            }
+            
+            if (nextBtn && !isNextDisabled) {
+                nextBtn.addEventListener('click', () => {
+                    if (currentPage < totalPages) {
+                        currentPage++;
+                        renderGallery(filteredItems);
+                    }
+                });
+            }
+            
+            // Page number buttons
+            paginationControls.querySelectorAll('button[data-page]').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    currentPage = parseInt(btn.dataset.page);
+                    renderGallery(filteredItems);
+                });
+            });
+        }
+
+        // Filter Gallery
+        function filterGallery(category) {
+            currentFilter = category;
+            currentPage = 1;  // Reset to page 1 when filtering
+            
+            if (category === 'all') {
+                renderGallery(allGalleryItems);
+            } else {
+                const filtered = allGalleryItems.filter(item => 
+                    item.category === category
+                );
+                renderGallery(filtered);
+            }
+        }
+
+        // Lightbox Functions
+        const lightbox = document.getElementById('lightbox');
+        const lightboxMediaContainer = document.getElementById('lightboxMediaContainer');
+        const lightboxTitle = document.getElementById('lightboxTitle');
+        const lightboxLocation = document.getElementById('lightboxLocation');
+        const lightboxClose = document.getElementById('lightboxClose');
+
+        function openLightbox(item) {
+            // Check if it's a video or image
+            if (item.mediaType === 'video' && item.video) {
+                // Stop and remove any existing video first
+                const existingVideo = document.getElementById('lightboxVideo');
+                if (existingVideo) {
+                    existingVideo.pause();
+                    existingVideo.currentTime = 0;
+                    existingVideo.src = '';
+                    existingVideo.load();
+                }
+                
+                // Create video element
+                lightboxMediaContainer.innerHTML = `
+                    <video id="lightboxVideo" controls autoplay style="max-width: 100%; max-height: 90vh; width: auto; height: auto; border-radius: var(--border-radius);">
+                        <source src="${item.video}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                `;
+                
+                // Ensure video loads
+                const newVideo = document.getElementById('lightboxVideo');
+                if (newVideo) {
+                    newVideo.load();
+                }
+            } else {
+                // Display image
+                lightboxMediaContainer.innerHTML = `
+                    <img id="lightboxImage" src="${item.image}" alt="${item.title}" style="max-width: 100%; max-height: 90vh; width: auto; height: auto; border-radius: var(--border-radius);">
+                `;
+            }
+            
+            lightboxTitle.textContent = item.title;
+            lightboxLocation.textContent = item.location;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            // Stop video if playing
+            const video = document.getElementById('lightboxVideo');
+            if (video) {
+                video.pause();
+                video.currentTime = 0;
+                video.src = '';
+                video.load();
+            }
+            
+            // Clear the media container when closing
+            lightboxMediaContainer.innerHTML = '';
+            
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                closeLightbox();
+            }
+        });
+
+
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            loadGallery();
+        });
+    </script>
+</body>
+</html>

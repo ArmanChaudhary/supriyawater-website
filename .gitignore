@@ -1,0 +1,43 @@
+# System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+
+# Documentation (keep only essential)
+*-GUIDE.md
+*-UPDATE.md
+*-SUMMARY.md
+*-CHANGES.md
+
+# Backup Files
+*.bak
+*.backup
+images/backup/
+
+# Minified Files (generated)
+*.min.css
+*.min.js
+
+# WebP Images (generated)
+*.webp

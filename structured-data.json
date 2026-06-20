@@ -1,0 +1,290 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://supriyawater.com.np/#organization",
+      "name": "Supriya Water Technology",
+      "alternateName": "SWT Nepal",
+      "url": "https://supriyawater.com.np",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://supriyawater.com.np/images/logo.png",
+        "width": 250,
+        "height": 60
+      },
+      "description": "Nepal's leading water treatment and purification company. Specializing in RO plants, water purifiers, WTP, STP, AC installation, and water fountain solutions across Nepal.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kathmandu",
+        "addressLocality": "Kathmandu",
+        "addressRegion": "Bagmati Province",
+        "postalCode": "44600",
+        "addressCountry": "NP"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 27.7172,
+        "longitude": 85.3240
+      },
+      "telephone": "+977-9851055247",
+      "email": "info@supriyawater.com.np",
+      "sameAs": [
+        "https://www.facebook.com/supriyawater/",
+        "https://www.instagram.com/supriya_water/",
+        "https://www.youtube.com/@supriyawater",
+        "https://www.linkedin.com/company/supriya-water-technology/"
+      ],
+      "areaServed": {
+        "@type": "Country",
+        "name": "Nepal"
+      },
+      "foundingDate": "2010",
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": "50+"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "6000",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://supriyawater.com.np/#localbusiness",
+      "name": "Supriya Water Technology",
+      "image": "https://supriyawater.com.np/images/logo.png",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kathmandu",
+        "addressRegion": "Bagmati",
+        "addressCountry": "NP"
+      },
+      "telephone": "+977-9851055247",
+      "openingHours": "Mo-Su 08:00-18:00",
+      "paymentAccepted": "Cash, Bank Transfer, eSewa, Khalti",
+      "currenciesAccepted": "NPR"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://supriyawater.com.np/#website",
+      "url": "https://supriyawater.com.np",
+      "name": "Supriya Water Technology - Nepal's Premier Water Solutions",
+      "description": "Leading water treatment company in Nepal offering RO plants, water purifiers, WTP, STP, AC installation, and professional water solutions.",
+      "publisher": {
+        "@id": "https://supriyawater.com.np/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://supriyawater.com.np/products.html?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "inLanguage": "en-NP"
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://supriyawater.com.np/#services",
+      "name": "Water Treatment Services",
+      "itemListElement": [
+        {
+          "@type": "Service",
+          "position": 1,
+          "name": "RO Plant Installation",
+          "description": "Professional RO plant installation from 12 LPH to 12000 LPH capacity for homes, hotels, hospitals, and industries across Nepal",
+          "provider": {
+            "@id": "https://supriyawater.com.np/#organization"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Nepal"
+          },
+          "serviceType": "Water Purification"
+        },
+        {
+          "@type": "Service",
+          "position": 2,
+          "name": "Water Treatment Plant (WTP) Installation",
+          "description": "Custom WTP installation with multi-stage filtration for residential, commercial, and industrial applications",
+          "provider": {
+            "@id": "https://supriyawater.com.np/#organization"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Nepal"
+          },
+          "serviceType": "Water Treatment"
+        },
+        {
+          "@type": "Service",
+          "position": 3,
+          "name": "Sewage Treatment Plant (STP)",
+          "description": "Complete sewage treatment solutions from 1 KLD to 100+ KLD capacity with eco-friendly technology",
+          "provider": {
+            "@id": "https://supriyawater.com.np/#organization"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Nepal"
+          },
+          "serviceType": "Wastewater Treatment"
+        },
+        {
+          "@type": "Service",
+          "position": 4,
+          "name": "AC Installation & Service",
+          "description": "Professional air conditioner installation, maintenance, and repair services for residential and commercial spaces",
+          "provider": {
+            "@id": "https://supriyawater.com.np/#organization"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Nepal"
+          },
+          "serviceType": "HVAC Services"
+        },
+        {
+          "@type": "Service",
+          "position": 5,
+          "name": "Water Filter Media Replacement",
+          "description": "Professional filter media replacement with genuine KT Premium Media for optimal water quality",
+          "provider": {
+            "@id": "https://supriyawater.com.np/#organization"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Nepal"
+          },
+          "serviceType": "Maintenance"
+        },
+        {
+          "@type": "Service",
+          "position": 6,
+          "name": "AMC Service",
+          "description": "Annual Maintenance Contract for RO plants, WTP, and water purification systems with guaranteed uptime",
+          "provider": {
+            "@id": "https://supriyawater.com.np/#organization"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Nepal"
+          },
+          "serviceType": "Maintenance Contract"
+        },
+        {
+          "@type": "Service",
+          "position": 7,
+          "name": "Water Tank Cleaning",
+          "description": "Professional water tank cleaning and disinfection services for safe drinking water storage",
+          "provider": {
+            "@id": "https://supriyawater.com.np/#organization"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Nepal"
+          },
+          "serviceType": "Cleaning Service"
+        },
+        {
+          "@type": "Service",
+          "position": 8,
+          "name": "Water Fountain Installation",
+          "description": "Custom water fountain design and installation for hotels, resorts, parks, and commercial spaces",
+          "provider": {
+            "@id": "https://supriyawater.com.np/#organization"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Nepal"
+          },
+          "serviceType": "Water Features"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://supriyawater.com.np/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://supriyawater.com.np/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Products",
+          "item": "https://supriyawater.com.np/products.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Services",
+          "item": "https://supriyawater.com.np/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "About Us",
+          "item": "https://supriyawater.com.np/about.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Contact",
+          "item": "https://supriyawater.com.np/contact.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://supriyawater.com.np/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the best RO plant capacity for my home in Nepal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For a typical Nepali household, we recommend 12-25 LPH for 3-5 members, 50 LPH for 5-10 members, and 100 LPH for 10+ members. Use our RO Capacity Calculator for precise recommendations based on your daily water consumption."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does RO plant installation cost in Nepal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Domestic RO purifiers start from NPR 22,200 to NPR 26,700. Commercial RO plants range from NPR 50,000 for 50 LPH to NPR 500,000+ for industrial capacity. Contact us for customized quotes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide WTP installation services across Nepal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we provide Water Treatment Plant (WTP) installation services nationwide across Nepal including Kathmandu, Pokhara, Chitwan, Butwal, Birgunj, Biratnagar, Dharan, and all major cities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between RO and WTP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "RO (Reverse Osmosis) removes dissolved salts and minerals through membrane filtration. WTP (Water Treatment Plant) removes physical impurities, turbidity, and contaminants through multi-stage filtration. Both are often used together for complete water purification."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I replace water filter media?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We recommend replacing filter media every 1-2 years depending on water quality and usage. Our AMC service includes timely media replacement with genuine KT Premium Media for optimal performance."
+          }
+        }
+      ]
+    }
+  ]
+}
