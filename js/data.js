@@ -1934,6 +1934,7 @@ const blog = [
         content: "Supriya Water Technology proudly presents our magnificent water fountain installation at a prestigious hotel in Birgunj. This project showcases our expertise in designing and installing state-of-the-art digital fountains with programmable LED lighting, music synchronization, and captivating water choreography. The fountain has become a landmark attraction, delighting guests and visitors with its mesmerizing displays. Our team's dedication to excellence and attention to detail has once again transformed a space into a spectacular visual experience..."
     },
     {
+        id: 17,
         date: "2023-04-15",
         title: "KT-20 Testing at Aloft Hotel Thamel",
         author: "Technical Team",
@@ -1943,6 +1944,7 @@ const blog = [
         content: "Our technical team conducted comprehensive field testing of KT-20 water filter media at the prestigious Aloft Hotel Thamel. The testing phase demonstrated outstanding performance in removing impurities, maintaining consistent water quality, and extending filter life. This real-world validation at a high-demand hospitality venue confirms KT-20's reliability and efficiency for commercial applications. The hotel management was extremely satisfied with the results, noting improved water quality and reduced maintenance requirements..."
     },
     {
+        id: 18,
         date: "2019-12-30",
         title: "Letter of Appreciation from Sports & Youth Minister - South Asian Games 2019",
         author: "Supriya Water Team",
@@ -1952,6 +1954,7 @@ const blog = [
         content: "We are immensely proud to have received a Letter of Appreciation from the Honorable Minister of Youth and Sports for our exceptional contribution to the South Asian Games 2019. Our Digital Lighting Decoration Nepal team, a sister brand of Supriya Water Technology, illuminated Dasarath Rangasala with cutting-edge digital lighting displays that captivated audiences and enhanced the grandeur of this historic sporting event. This recognition from the Ministry acknowledges our commitment to excellence and innovation in bringing international-standard lighting technology to Nepal for the first time..."
     },
     {
+        id: 19,
         date: "2023-03-20",
         title: "Lifetime Membership - Water Filter Association Nepal",
         author: "Supriya Water Team",
@@ -1961,6 +1964,7 @@ const blog = [
         content: "Supriya Water Technology has been honored with Lifetime Membership from the Water Filter Association of Nepal, a prestigious recognition of our sustained excellence and significant contributions to Nepal's water treatment industry. This membership acknowledges our role as industry leaders, our commitment to quality standards, and our continuous efforts in advancing water purification technology across the nation. We remain dedicated to collaborating with industry partners to ensure access to safe, clean drinking water for all communities in Nepal..."
     },
     {
+        id: 20,
         date: "2019-12-18",
         title: "Online Public Craze of Digital Lighting Decoration at NEA",
         author: "Digital Team",
@@ -1970,6 +1974,7 @@ const blog = [
         content: "The digital lighting decoration installed by Digital Lighting Decoration Nepal at the Nepal Electricity Authority (NEA) headquarters became an overnight social media sensation, with thousands of people sharing photos and videos online. This unprecedented public response showcased the power of innovative illumination technology in transforming public spaces. The project featured programmable RGB pixel lighting with custom content display capabilities, creating mesmerizing patterns and animations that had never been seen before in Nepal. The overwhelming positive feedback from the public validated our vision of bringing world-class digital lighting to Nepal..."
     },
     {
+        id: 21,
         date: "2023-02-15",
         title: "Pashupatinath Shivratri Digital Lighting Decoration",
         author: "Digital Team",
