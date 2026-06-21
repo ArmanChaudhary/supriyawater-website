@@ -1,6 +1,9 @@
 # Netlify Redirects Configuration
 # This file replaces .htaccess for Netlify hosting
 
+# Redirect old netlify.app domain to primary domain (301 permanent)
+https://supriyawater.netlify.app/*  https://supriyawater.com.np/:splat  301!
+
 # Remove .html extension - allow clean URLs
 /about              /about.html            200
 /products           /products.html         200
